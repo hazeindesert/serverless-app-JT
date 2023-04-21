@@ -1,0 +1,17 @@
+service: JT-hello-world
+
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: python3.9
+  profile: default
+
+
+functions:
+  hello:
+    handler: handler.hello
+
+plugins: 
+  - serverless-offline
+  
